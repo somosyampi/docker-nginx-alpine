@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        image: [php, proxy]
+        image: [php, php-http2, proxy]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
